@@ -13,7 +13,7 @@ height: 100%;
   display: flex;
   width: 100%;
   height: 60px;
-  background: rgba(238, 232, 232);
+  background: rgb(252, 250, 250);
  
 }
 
@@ -27,14 +27,17 @@ height: 100%;
 .navbar ul li {
   margin: 0 1rem;
   padding: 1rem;
-  color: black
+  color: black;
+  letter-spacing: 3px;
+  
 }
 
 .navbar ul li > .active {
   border-bottom: 1px solid black;
+  padding-bottom: 5px;
   text-decoration: none;
  font-size: 1.2rem;
-  color: black;
+  color: black
 }
 * {
   margin:0;

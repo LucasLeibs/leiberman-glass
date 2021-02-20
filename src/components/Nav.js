@@ -17,7 +17,7 @@ export default function Nav() {
             offset={0}
             duration={750}
             >
-            Home
+            HOME
             </Link>
             </li>
            <li> <Link 
@@ -29,7 +29,7 @@ export default function Nav() {
             offset={0}
             duration={750}
             >
-            About
+            ABOUT
             </Link>
             </li>
             <li><Link 
@@ -41,7 +41,7 @@ export default function Nav() {
             offset={0}
             duration={750}
             >
-            Catalog
+            CATALOG
             </Link>
             </li>
             <li><Link 
@@ -53,7 +53,7 @@ export default function Nav() {
             offset={0}
             duration={750}
             >
-            Inquire
+            CONTACT
             </Link>
             </li>
       </ul>
