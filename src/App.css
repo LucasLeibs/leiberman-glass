@@ -13,7 +13,8 @@ height: 100%;
   display: flex;
   width: 100%;
   height: 60px;
-  background: rgba(0,0,0,0.7);
+  background: rgba(238, 232, 232);
+ 
 }
 
 .navbar ul {
@@ -25,45 +26,59 @@ height: 100%;
 
 .navbar ul li {
   margin: 0 1rem;
-  padding: 1rem
+  padding: 1rem;
+  color: black
 }
 
 .navbar ul li > .active {
-  border-bottom: 1px solid white
+  border-bottom: 1px solid black;
+  text-decoration: none;
+ font-size: 1.2rem;
+  color: black;
 }
 * {
   margin:0;
   padding:0
 }
 
-.link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #f4f4f4
+
+ ul li:hover {
+  color: #87ceeb;
+  cursor: pointer;
 }
-.link:hover {
-  color: skyblue;
-}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #333;
+  background: white;
   color: #fff;
   line-height: 1.6;
   height: 100vh;
-  overflow: scroll;
+  
 }
 
 
 
-section {
+section#home {
 display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly ;
+text-align:center;
+width: 100%;
+height: 100vh;
+color: black
+
+}
+section {
+  display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align:center;
 width: 100%;
 height: 100vh;
-scroll-snap-align: center;
+color: black
+
 }
 
 
@@ -79,7 +94,7 @@ font-size: 1.5rem
 }
 
 section#home {
-background: url(./images/glass/Aurora\ Lantern.JPG) no-repeat center center/cover;
+background:white
 }
 /* section#home::after {
   content: "";
@@ -93,8 +108,17 @@ background: url(./images/glass/Aurora\ Lantern.JPG) no-repeat center center/cove
   z-index: -1;   
 } */
 section#catalog {
-  background: url(./images/glass/Green\ Pea\ Pod.JPG) no-repeat center center/cover;
+  
 }
+.lantern {
+  width: 800px;
+  margin-left: -100px
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: 50px;
+  }
 
 @media screen and (max-width: 375px) {
   .navbar ul li {
@@ -103,7 +127,7 @@ section#catalog {
   }
   section#home::after {
     content: "";
-    background: url(./images/glass/Green\ Pea\ Pod.JPG) no-repeat center center/cover;;
+    background: url(./images/glass/Green\ Pea\ Pod.JPG) no-repeat right center/cover;;
     opacity:1;
     top: 0;
     left: 0;
@@ -116,7 +140,7 @@ section#catalog {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     text-align:center;
     width: 100%;
     height: 100vh;
@@ -124,5 +148,4 @@ section#catalog {
     section#home h1 {
       margin-top: 100px;
       }
-
-}
+    }
