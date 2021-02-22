@@ -5,7 +5,8 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import Catalog from './components/Catalog';
-import Inquire from './components/inquire';
+import Contact from './components/Contact';
+// import blue from '../images/glass/IMG_7240.JPG'
 function App() {
   return (
   
@@ -15,7 +16,9 @@ function App() {
     <Home></Home>
     <About></About>
     <Catalog></Catalog>
-    <Inquire></Inquire>
+    <Contact></Contact>
+    
+    
     </div>
     
   );

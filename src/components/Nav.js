@@ -1,64 +1,65 @@
-import React, { Fragment } from "react";
-// import {BrowserRouter as Router, Switch, Route, Redirect, Link} from 'react-router-dom'
-import { Link } from 'react-scroll'
+import React from "react";
+import { Link } from "react-scroll";
 export default function Nav() {
   return (
-     
-    <Fragment>
-        
+    
       <nav className="navbar">
         <ul>
-           <li> <Link 
-            className="link"
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={750}
+          <li>
+            <Link
+              className="link"
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={750}
             >
-            HOME
+              LEIBERMAN GLASS
             </Link>
-            </li>
-           <li> <Link 
-                className="link"
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={750}
+          </li>
+          <li>
+            {" "}
+            <Link
+              className="link"
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={750}
             >
-            ABOUT
+              ABOUT
             </Link>
-            </li>
-            <li><Link 
-                className="link"
-            activeClass="active"
-            to="catalog"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={750}
+          </li>
+          <li>
+            <Link
+              className="link"
+              activeClass="active"
+              to="catalog"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={750}
             >
-            CATALOG
+              CATALOG
             </Link>
-            </li>
-            <li><Link 
-                className="link"
-            activeClass="active"
-            to="inquire"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={750}
+          </li>
+          <li>
+            <Link
+              className="link"
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={750}
             >
-            CONTACT
+              CONTACT
             </Link>
-            </li>
-      </ul>
+          </li>
+        </ul>
       </nav>
-      
-    </Fragment>
+    
   );
 }
