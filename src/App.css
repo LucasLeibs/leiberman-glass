@@ -7,7 +7,7 @@ height: 100%;
 /* background: url(./images/glass/IMG_7197.JPG)no-repeat center center/cover; */
 }
 .navbar {
-  margin-top: 300px;
+  margin-top: 250px;
   position: fixed;
 
   z-index: 1;
@@ -36,7 +36,7 @@ height: 100%;
   padding: 1rem;
   color: white;
   letter-spacing: 3px;
-  width: 300px;
+  width: 250px;
   
 }
 
@@ -78,7 +78,6 @@ text-align:center;
 width: 100%;
 height: 100vh;
 color: white;
-
 
 }
 section {
@@ -239,7 +238,11 @@ section#catalog:hover {
     /* border-top: 1px solid white;
     border-bottom: 3px solid white; */
     padding: 15px;
-    width: 350px;
+    transition: padding 0.3s ease-in-out;
+  -webkit-transition: padding 0.3s ease-in-out;
+  -moz-transition: padding 0.3s ease-in-out;
+  -ms-transition: padding 0.3s ease-in-out;
+    /* width: 350px; */
      font-weight: bold;
      background: url(./images/glass/IMG_7197.JPG)no-repeat center center/cover; 
    }
@@ -272,6 +275,7 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
   color: #bbb5af;
+ 
 }
 
 input::placeholder, textarea::placeholder {
@@ -291,7 +295,12 @@ input::-ms-placeholder, textarea::-ms-placeholder {
 input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
   color: #bbb5af;
 }
- on hover placeholder
+input:focus, textarea:focus{
+  color: #bbb5af;
+  width: 450px;
+  border: 1px solid white;
+  margin: 10px;
+}
 
 input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
   color: #e2dedb;
@@ -318,6 +327,7 @@ input:hover::placeholder, textarea:hover::placeholder {
 
 input:hover:focus::placeholder, textarea:hover:focus::placeholder {
   color: #cbc6c1;
+
 }
 
 input:hover::placeholder, textarea:hover::placeholder {
@@ -343,6 +353,7 @@ header {
   position: relative;
   width: 500px;
   margin: 50px auto 100px auto;
+
 }
 
 input {
@@ -356,8 +367,8 @@ input {
   outline: none;
   color: #726659;
   
-  border: solid 1px white;
-  border-bottom: none;
+  border: solid 0.5px white;
+
   
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -384,7 +395,7 @@ textarea {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
   
-  border: solid 1px white;
+  border: solid 0.5px white;
   
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
