@@ -11,7 +11,7 @@ export default function Catalog() {
     return (
         
         <section id="catalog">
-        
+  
        
         
        
