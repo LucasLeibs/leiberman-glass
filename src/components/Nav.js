@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import {Link as Linky} from 'react-router-dom'
 export default function Nav() {
   return (
     
@@ -58,6 +59,7 @@ export default function Nav() {
               CONTACT
             </Link>
           </li>
+          
         </ul>
       </nav>
     

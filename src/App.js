@@ -6,20 +6,27 @@ import Home from './components/Home';
 import About from './components/About';
 import Catalog from './components/Catalog';
 import Contact from './components/Contact';
+import BrowsePieces from './components/BrowsePieces';
+import Main from './containers/Main';
 // import blue from '../images/glass/IMG_7240.JPG'
 function App() {
   return (
-  
+  <Router>
     <div className="container">
- 
-    <Nav></Nav>
-    <Home></Home>
-    <About></About>
-    <Catalog></Catalog>
-    <Contact></Contact>
+    <Switch>
+      <Route exact path="/" component={Main}/>
+      <Route exact path="/work" component={BrowsePieces}/>
+  
+   
+   
+   
+    </Switch>
+    
+    
     
     
     </div>
+    </Router>
     
   );
 }
