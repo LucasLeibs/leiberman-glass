@@ -1,19 +1,21 @@
-import React from 'react'
+
 import blue from '../images/glass/IMG_7240.JPG'
 import red from '../images/glass/IMG_7219.JPG'
 import blue1 from '../images/glass/IMG_7217.JPG'
 import blue2 from '../images/glass/IMG_7206.JPG'
 import red2 from '../images/glass/IMG_7230.JPG'
+import WorkNav from './WorkNav'
 
 export default function BrowsePieces() {
     return (
         <div className="section">
-             <div className="image-container">
+            <WorkNav></WorkNav>
+    <div className="image-container">
 
 <img  onMouseOver={e => (e.currentTarget.src = red2)} className="catalog-image" src={red}
     onMouseOut={e => (e.currentTarget.src = red)}
 ></img>
-<p>RED URCHIN</p>
+
 
 </div>
              <div className="image-container">

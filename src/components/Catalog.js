@@ -6,6 +6,7 @@ import red from '../images/glass/IMG_7219.JPG'
 import blue2 from '../images/glass/IMG_7248.JPG'
 import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
 import MailOutlineRoundedIcon from '@material-ui/icons/MailOutlineRounded';
+import Anime from 'react-anime'
 export default function Catalog() {
 
     return (
@@ -15,8 +16,15 @@ export default function Catalog() {
        
         
        
-    
-     <Linky className="button-link" to='/work'><h1>VIEW PIECES</h1></Linky>
+     
+          
+         
+     <Linky className="button-link" to='/work'> <Anime loop={true}
+          duration={3000}
+          direction="normal"
+          delay={(el, index) => index * 240}
+         easing={'easeInSine'}
+          scale={[.9]}><h1>VIEW PIECES</h1></Anime></Linky>
 
         </section>
         

@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
+
 import { Link } from "react-scroll";
-import {Link as Linky} from 'react-router-dom'
+
 import Anime from 'react-anime';
-export default function Nav() {
-  
-  return (
-    
-      <nav className="navbar">
-        
-          
+export default function WorkNav() {
+    return (
+        <nav className="navbar">
         <ul>
         <Anime
           loop={false}
@@ -29,7 +26,7 @@ export default function Nav() {
               offset={0}
               duration={750}
             >
-              LEIBERMAN GLASS
+            OCOTILLOW BOWLS
             </Link>
           </li>
           <li>
@@ -43,7 +40,7 @@ export default function Nav() {
               offset={0}
               duration={750}
             >
-              ABOUT
+           PEAPODS
             </Link>
           </li>
           <li>
@@ -56,7 +53,7 @@ export default function Nav() {
               offset={0}
               duration={750}
             >
-              CATALOG
+              LANTERNS
             </Link>
           </li>
           <li>
@@ -69,13 +66,14 @@ export default function Nav() {
               offset={0}
               duration={750}
             >
-              CONTACT
+              ACORNS
             </Link>
           </li>
           </Anime>
         </ul>
        
       </nav>
-    
-  );
+    )
 }
+
+
