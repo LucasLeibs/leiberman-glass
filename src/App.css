@@ -10,7 +10,7 @@ height: 100%;
 .navbar {
   margin-top: 250px;
   position: fixed;
-
+margin-left:100px;
   z-index: 1;
   display: flex;
 

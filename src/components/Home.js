@@ -8,6 +8,7 @@ import lantern from '../images/glass/IMG_7171.JPG'
 import pea from '../images/glass/IMG_7188.JPG'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
+import Anime from 'react-anime';
 const slideImages = [
     lantern,
     blue,
@@ -20,10 +21,12 @@ export default function Home() {
  
     return (
         <section id="home">
-           
-        <h1>LEIBERMAN GLASS</h1>
-        
+           <Anime duration={6000} opacity={[0, 1]} translateY={'3em'} delay={(e, i) => i * 1000}>
+    <h1>LEIBERMAN GLASS</h1>
+    </Anime>
+    
          <div className="slide-container">
+         <Anime duration={2000} opacity={[0, 1]} translateY={'2em'} delay={(e, i) => i * 1000}>
         <Slide>
           <div className="each-slide">
             <div >
@@ -46,8 +49,10 @@ export default function Home() {
             </div>
           </div>
         </Slide>
+        </Anime>
+        
       </div>
-      
+    
        
 
 

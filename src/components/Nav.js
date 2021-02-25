@@ -1,11 +1,24 @@
 import React from "react";
 import { Link } from "react-scroll";
 import {Link as Linky} from 'react-router-dom'
+import Anime from 'react-anime';
 export default function Nav() {
+  
   return (
     
       <nav className="navbar">
+        
+          
         <ul>
+        <Anime
+          loop={1}
+          duration={5000}
+          direction="alternate"
+          delay={(el, index) => index * 240}
+          translateX='13rem'
+          scale={[.95, .9]}
+          >
+              
           <li>
             <Link
               className="link"
@@ -59,8 +72,9 @@ export default function Nav() {
               CONTACT
             </Link>
           </li>
-          
+          </Anime>
         </ul>
+       
       </nav>
     
   );
