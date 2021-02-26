@@ -24,7 +24,7 @@ export default function Catalog() {
           direction="normal"
           delay={(el, index) => index * 240}
          easing={'easeInSine'}
-          scale={[.9]}><h1>VIEW PIECES</h1></Anime></Linky>
+          scale={[.9]}><h2>VIEW PIECES</h2></Anime></Linky>
 
         </section>
         

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 import Anime from 'react-anime';
 export default function WorkNav() {
@@ -19,12 +19,7 @@ export default function WorkNav() {
           <li>
             <Link
               className="link"
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={750}
+                to="/work"
             >
             OCOTILLOW BOWLS
             </Link>
@@ -32,26 +27,18 @@ export default function WorkNav() {
           <li>
             {" "}
             <Link
-              className="link"
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={750}
+          
+              to="/peapods"
+         
             >
            PEAPODS
             </Link>
           </li>
           <li>
             <Link
-              className="link"
-              activeClass="active"
-              to="catalog"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={750}
+           
+              to="/lanterns"
+        
             >
               LANTERNS
             </Link>
@@ -59,12 +46,15 @@ export default function WorkNav() {
           <li>
             <Link
               className="link"
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={750}
+             
+            >
+              ACORNS
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="link"
+             to="/"
             >
               ACORNS
             </Link>

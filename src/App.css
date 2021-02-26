@@ -10,7 +10,7 @@ height: 100%;
 .navbar {
   margin-top: 250px;
   position: fixed;
-margin-left:200px;
+margin-right:-200px;
   z-index: 1;
   display: flex;
 
@@ -125,7 +125,7 @@ margin: 0 1rem;
 padding: 1rem;
 font-weight: normal;
 letter-spacing: 3px;
-
+margin-right:  -156px;
 }
 
 
@@ -443,8 +443,8 @@ textarea:hover {
 
 .each-slide > div img {
  
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   object-fit: contain;
 
 }
@@ -460,6 +460,6 @@ textarea:hover {
 .slide-container {
 
 margin-top: 50px;
-width: 40%
-
+width: 50%;
+margin-right: -200px
 }
