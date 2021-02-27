@@ -12,7 +12,7 @@ export default function Main() {
             <Nav></Nav>
             <Home></Home>
             <About></About>
-            <Catalog></Catalog>
+       
             <Contact></Contact>
         </div>
     )

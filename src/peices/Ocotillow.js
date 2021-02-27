@@ -11,7 +11,7 @@ import bluebowl from '../images/glass/IMG_7249.JPG'
 import redlean from '../images/glass/IMG_7236.JPG'
 
 import 'react-slideshow-image/dist/styles.css'
-import { Slide } from 'react-slideshow-image';
+import { Fade } from 'react-slideshow-image';
 import Anime from 'react-anime';
 const slideImages = [
     
@@ -27,49 +27,27 @@ const slideImages = [
 export default function Ocotillow() {
     return (
         
-    <section>
-         <div className="slide-container">
-         <Anime duration={2000} opacity={[0, 1]} translateY={'2em'} delay={(e, i) => i * 1000}>
-        <Slide>
-          <div className="each-slide">
-            <div >
-             <img src={slideImages[0]}></img>
-            </div>
-          </div>
-          <div className="each-slide">
-          <div>
-             <img src={slideImages[1]}></img>
-            </div>
-          </div>
-          <div className="each-slide">
-          <div>
-             <img src={slideImages[2]}></img>
-            </div>
-          </div>
-          <div className="each-slide">
-          <div>
-             <img src={slideImages[3]}></img>
-            </div>
-          </div>
-          <div className="each-slide">
-          <div>
-             <img src={slideImages[4]}></img>
-            </div>
-          </div>
-          <div className="each-slide">
-          <div>
-             <img src={slideImages[5]}></img>
-            </div>
-          </div>
-          <div className="each-slide">
-          <div>
-             <img src={slideImages[6]}></img>
-            </div>
-          </div>
-        </Slide>
-        </Anime>
-        
-      </div>
+    <section id="bowls">
+      
+      <div className="gallery">
+       <figure className="gallery__item-1">
+    <img src={blue} className="gallery__img" alt="Image 1"/>
+  </figure>
+       <figure className="gallery__item-2">
+    <img src={blue2} className="gallery__img" alt="Image 1"/>
+  </figure>
+       <figure className="gallery__item-3">
+    <img src={redlean} className="gallery__img" alt="Image 1"/>
+  </figure>
+  <div className="ocotillo-desc">
+    <h1>OCOTOLLO</h1>
+    <p>THIS IS THE DESCRIPTION OF THE OCTILLOW PICEC IT ORGINAITED 
+      IN THE DESTERNM AND I LOCE IT AND FH DFNISHDFDSF 
+      ADF I MADE IT FROM THE BOTTOM OF MY HEASKDRHJUIR.
+    </p>
+  </div>
+  </div>
+  
        </section>
     )
 }

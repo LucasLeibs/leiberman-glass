@@ -2,7 +2,7 @@ import React from 'react'
 import lantern from '../images/glass/IMG_7171.JPG'
 import lantern2 from '../images/glass/IMG_7172.JPG'
 import 'react-slideshow-image/dist/styles.css'
-import { Slide } from 'react-slideshow-image';
+import { Fade } from 'react-slideshow-image';
 import Anime from 'react-anime';
 const slideImages = [
     lantern,
@@ -15,7 +15,7 @@ export default function Lanterns() {
           
           <div className="slide-container">
          <Anime duration={2000} opacity={[0, 1]} translateY={'2em'} delay={(e, i) => i * 1000}>
-        <Slide>
+        <Fade>
           <div className="each-slide">
             <div >
              <img src={slideImages[0]}></img>
@@ -27,7 +27,7 @@ export default function Lanterns() {
             </div>
           </div>
          
-        </Slide>
+        </Fade>
         </Anime>
         
       </div>

@@ -47,17 +47,17 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link
+            <Linky
               className="link"
               activeClass="active"
-              to="catalog"
+              to="/work"
               spy={true}
               smooth={true}
               offset={0}
               duration={750}
             >
               CATALOG
-            </Link>
+            </Linky>
           </li>
           <li>
             <Link

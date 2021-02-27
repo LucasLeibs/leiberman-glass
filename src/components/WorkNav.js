@@ -6,6 +6,7 @@ import Anime from 'react-anime';
 export default function WorkNav() {
     return (
         <nav className="navbar">
+          
         <ul>
         <Anime
           loop={false}
@@ -15,7 +16,7 @@ export default function WorkNav() {
           translateX='5rem'
           scale={[.95, .9]}
           >
-              
+           <li><h1>WORK</h1>  </li> 
           <li>
             <Link
               className="link"
@@ -27,7 +28,7 @@ export default function WorkNav() {
           <li>
             {" "}
             <Link
-          
+            className="link"
               to="/peapods"
          
             >
@@ -36,7 +37,7 @@ export default function WorkNav() {
           </li>
           <li>
             <Link
-           
+            className="link"
               to="/lanterns"
         
             >
@@ -52,12 +53,7 @@ export default function WorkNav() {
             </Link>
           </li>
           <li>
-            <Link
-              className="link"
-             to="/"
-            >
-              ACORNS
-            </Link>
+           
           </li>
           </Anime>
         </ul>

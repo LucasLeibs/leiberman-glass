@@ -5,7 +5,7 @@ import peapod3 from '../images/glass/IMG_7180.JPG'
 import greenPeapod from '../images/glass/IMG_7188.JPG'
 import greenPeapod2 from '../images/glass/IMG_7191.JPG'
 import 'react-slideshow-image/dist/styles.css'
-import { Slide } from 'react-slideshow-image';
+import { Fade } from 'react-slideshow-image';
 import Anime from 'react-anime';
 const slideImages = [
     greenPeapod,
@@ -18,11 +18,11 @@ const slideImages = [
   
 export default function Lanterns() {
     return (
-        <section>
+        <section id="peapods">
           
           <div className="slide-container">
          <Anime duration={2000} opacity={[0, 1]} translateY={'2em'} delay={(e, i) => i * 1000}>
-        <Slide>
+        <Fade>
           <div className="each-slide">
             <div >
              <img src={slideImages[0]}></img>
@@ -39,7 +39,7 @@ export default function Lanterns() {
             </div>
           </div>
          
-        </Slide>
+        </Fade>
         </Anime>
         
       </div>
